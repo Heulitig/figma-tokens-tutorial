@@ -4,5 +4,7 @@
 download-base-url: https://raw.githubusercontent.com/heulitig/figma-tokens-tutorial/main
 
 -- fastn.dependency: fifthtry.github.io/doc-site as ds
+-- fastn.dependency: fifthtry.github.io/forest-cs
+-- fastn.dependency: fifthtry.github.io/saturated-sunset-cs
 
 -- fastn.auto-import: ds

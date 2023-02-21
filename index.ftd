@@ -1,12 +1,12 @@
 -- import: fastn/processors as pr
--- import: fifthtry.github.io/fastn-cs/colors as fastn-cs
+-- import: fifthtry.github.io/forest-cs as forest-cs
 -- import: fifthtry.github.io/saturated-sunset-cs as sunset-cs
--- import: fifthtry.github.io/fastn-cs/json-to-ftd as j
+-- import: heulitig.github.io/figma-tokens-tutorial/json-to-ftd as j
 
--- string fastn-figma:
+-- string forest-figma:
 $processor$: pr.figma-cs-token
-variable: $fastn-cs.main
-name: fastn-cs
+variable: $forest-cs.main
+name: forest-cs
 
 
 -- string sunset-figma:
@@ -40,10 +40,10 @@ Use quick actions from menu to open figma token plugin
 
 Click on the copy button below
 
--- ds.code: Fastn-cs
+-- ds.code: forest-cs
 lang: json
 
-$fastn-figma
+$forest-figma
 
 -- ds.markdown:
 
