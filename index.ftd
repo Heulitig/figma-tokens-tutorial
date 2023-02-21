@@ -181,7 +181,7 @@ height.fixed.px: 300
 
 -- ds.h1: Lets try another color scheme
 
-Lets use sunset-cs now. Save the following json to a new json file
+Let's use `sunset-cs` now. Save the following json to a new json file
 named `sunset-cs.json`.
 
 -- ds.code: Sunset-cs
@@ -191,12 +191,31 @@ $sunset-figma
 
 -- ds.h1: Load `sunset-cs.json` in figma
 
-[SCREENSHOT]
+Just like we loaded `forest-cs.json`, similarly load `sunset-cs.json`
+into the figma plugin.
 
-Check the `sunset-cs-light` checkbox. To see the design in dark color scheme,
-toggle `sunset-cs-dark` checkbox.
+Click on `Load` -> Select `File` Tab ->
+Click on `Choose File` -> Open `sunset.cs.json`
 
-[SCREENSHOT]
+-- ftd.image:
+src: $assets.files.static.open-sunset-cs.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+After loading `sunset-cs.json`, check the `sunset-cs-light` checkbox as shown below
+
+-- ftd.image:
+src: $assets.files.static.select-sunset-cs-light.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+To see the design in dark color scheme, toggle `sunset-cs-dark` checkbox.
+
+-- ftd.image:
+src: $assets.files.static.sunset-toggle-cs.png
+height.fixed.px: 300
 
 -- ds.h1: Let's fix forest-cs
 
