@@ -128,7 +128,7 @@ height.fixed.px: 300
 
 -- ds.markdown:
 
-After selecting it, drag and create your rectangle.
+After selecting it, drag the cursor and create your rectangle.
 
 -- ftd.image:
 src: $assets.files.static.create-rectangle.png
@@ -145,16 +145,39 @@ height.fixed.px: 300
 
 -- ds.h1: Create a new text-block
 
-Create a new text-block inside rectangle and change its color
-to `Standalone Colors -> text`
+First, select the Text option from the top menu.
 
-[SCREENSHOT]
+-- ftd.image:
+src: $assets.files.static.select-text-option.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+After selecting it, drag the cursor inside the rectangle
+and create a text-block. Add some text to it,
+let's say `Hello There`
+
+-- ftd.image:
+src: $assets.files.static.hello-text-block.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+As you might see, the text is barely visible inside the rectangle.
+So now, select the text-block and change its color to
+`Standalone Colors -> text` as shown below.
+
+-- ftd.image:
+src: $assets.files.static.select-text-block-color.png
+height.fixed.px: 300
 
 -- ds.h1: Test your design in dark mode
 
-Toggle the `forest-cs-dark` to change the design with dark color scheme
+Toggle the `forest-cs-dark` checkbox to change the design with dark color scheme
 
-[SCREENSHOT]
+-- ftd.image:
+src: $assets.files.static.forest-toggle-cs.png
+height.fixed.px: 300
 
 -- ds.h1: Lets try another color scheme
 
