@@ -51,11 +51,16 @@ height.fixed.px: 300
 
 -- ds.h1: Create a new empty file inside figma plugin
 
-[SCREENSHOT]
+Once you have launched the plugin, create a new empty file
+by clicking on its button as shown below
+
+-- ftd.image:
+src: $assets.files.static.select-new-empty-file.png
+height.fixed.px: 300
 
 -- ds.h1: Save the forest theme json
 
-Click on the copy button below
+Click on the below copy button inside forest-cs code-block
 
 -- ds.code: forest-cs
 lang: json
@@ -64,16 +69,48 @@ $forest-figma
 
 -- ds.markdown:
 
-Create a new json file using your favourite text editor named `forest-cs.json`
-and paste the content you just copied.
+Create a new json file named `forest-cs.json` using your favourite
+text editor (for eg. Sublime Text) and paste the content you just copied
+and save it.
 
--- ds.h1: Load `forest-cs.json` in figma plugin
+-- ds.h1: Load `forest-cs.json` inside figma plugin
 
-[SCREENSHOT]
+To load `forest-cs.json` which we just created,
+
+Step 1: Click on the Load button
+
+-- ftd.image:
+src: $assets.files.static.select-load-button.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Step 2: Go under File Tab
+
+-- ftd.image:
+src: $assets.files.static.select-file.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Step 3: Click on Choose File button
+
+-- ftd.image:
+src: $assets.files.static.select-choose-file.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Step 4: Find and select `forest-cs.json` from the file picker
+and click on open button.
+
+-- ftd.image:
+src: $assets.files.static.select-forest-cs.png
+height.fixed.px: 300
+
+-- ds.markdown:
 
 Check the `forest-cs-light` checkbox
-
-[SCREENSHOT]
 
 -- ds.h1: Create a new rectangle
 
