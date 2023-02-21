@@ -217,14 +217,19 @@ To see the design in dark color scheme, toggle `sunset-cs-dark` checkbox.
 src: $assets.files.static.sunset-toggle-cs.png
 height.fixed.px: 300
 
--- ds.h1: Let's fix forest-cs
+-- ds.markdown:
+
+Congratulations you have successfully completed this tutorial.
+
+;; Upcoming to create your own fastn color scheme repo using figma json
+/-- ds.h1: Let's fix forest-cs
 
 Let's load the forest-cs.json once again, you will notice it looks unreadable
 in light mode.
 
 [SCREENSHOT]
 
--- ds.h1: Let's change the token value
+/-- ds.h1: Let's change the token value
 
 Locate the `Standalone Colors -> text`, right click on it and
 select Edit Token and set the Color value to `#FFFFFF`.
@@ -235,7 +240,7 @@ select Edit Token and set the Color value to `#FFFFFF`.
 
 This will look better.
 
--- ds.h1: Let's convert json to FTD
+/-- ds.h1: Let's convert json to FTD
 
 Click on export in Figma Studio.
 
@@ -247,23 +252,23 @@ Copy the json shown in the preview section.
 
 And paste this json in the text-box below.
 
--- j.json-exporter:
+/-- j.json-exporter:
 
--- ds.markdown:
+/-- ds.markdown:
 
 You will see the generated FTD code. Copy the FTD cod
 
--- ds.h1: Go to the github repo of `forest-cs`
+/-- ds.h1: Go to the github repo of `forest-cs`
 
 Click on the Use this template button
 
--- ds.h1: Modify the FASTN.ftd
+/-- ds.h1: Modify the FASTN.ftd
 
 Change the package name and download base url
 
--- ds.h1: Activate github pages
+/-- ds.h1: Activate github pages
 
--- ds.h1: Modify colors.ftd
+/-- ds.h1: Modify colors.ftd
 
 Go to this file https://github.com/FifthTry/dark-flame-cs/edit/main/colors.ftd
 and click on the edit button and paste your copied FTD code.
@@ -273,7 +278,7 @@ Wait for the github action to get completed.
 
 Congratulations you
 
--- ds.h1: Preview your color-scheme in action
+/-- ds.h1: Preview your color-scheme in action
 
 Go to (<github-username>.github.io/<repo>/)
 
