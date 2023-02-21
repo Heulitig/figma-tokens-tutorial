@@ -1,57 +1,163 @@
--- import: heulitig.github.io/figma-tokens-tutorial/assets
+-- import: fastn/processors as pr
+-- import: fifthtry.github.io/fastn-cs/colors as fastn-cs
+-- import: fifthtry.github.io/saturated-sunset-cs as sunset-cs
+-- import: fifthtry.github.io/fastn-cs/json-to-ftd as j
+
+-- string fastn-figma:
+$processor$: pr.figma-cs-token
+variable: $fastn-cs.main
+name: fastn-cs
 
 
+-- string sunset-figma:
+$processor$: pr.figma-cs-token
+variable: $sunset-cs.main
+name: sunset-cs
 
--- ds.page: Welcome to your [FASTN site](https://fastn.dev/)
+-- ds.page: How to use figma token with fastn color schemes
 
-FASTN Blank Package Template Repo
+-- ds.h1: Install figma token
 
-🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
+https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma-(Figma-Tokens)
+
+-- ds.h1: Create a new figma document
+
+[SCREENSHOT]
+
+-- ds.h1: Open figma tokens plugin
+
+Use quick actions from menu to open figma token plugin
+
+[SCREENSHOT]
+
+[SCREENSHOT 2]
+
+-- ds.h1: Create a new empty file inside figma plugin
+
+[SCREENSHOT]
+
+-- ds.h1: Save the forest theme json
+
+Click on the copy button below
+
+-- ds.code: Fastn-cs
+lang: json
+
+$fastn-figma
+
+-- ds.markdown:
+
+Create a new json file using your favourite text editor named `forest-cs.json`
+and paste the content you just copied.
+
+-- ds.h1: Load `forest-cs.json` in figma plugin
+
+[SCREENSHOT]
+
+Check the `forest-cs-light` checkbox
+
+[SCREENSHOT]
+
+-- ds.h1: Create a new rectangle
+
+Create a new rectangle and change its color to
+`Background Colors -> base`
+
+[SCREENSHOT]
+
+-- ds.h1: Create a new text-block
+
+Create a new text-block inside rectangle and change its color
+to `Standalone Colors -> text`
+
+[SCREENSHOT]
+
+-- ds.h1: Test your design in dark mode
+
+Toggle the `forest-cs-dark` to change the design with dark color scheme
+
+[SCREENSHOT]
+
+-- ds.h1: Lets try another color scheme
+
+Lets use sunset-cs now. Save the following json to a new json file
+named `sunset-cs.json`.
+
+-- ds.code: Sunset-cs
+lang: json
+
+$sunset-figma
+
+-- ds.h1: Load `sunset-cs.json` in figma
+
+[SCREENSHOT]
+
+Check the `sunset-cs-light` checkbox. To see the design in dark color scheme,
+toggle `sunset-cs-dark` checkbox.
+
+[SCREENSHOT]
+
+-- ds.h1: Let's fix forest-cs
+
+Let's load the forest-cs.json once again, you will notice it looks unreadable
+in light mode.
+
+[SCREENSHOT]
+
+-- ds.h1: Let's change the token value
+
+Locate the `Standalone Colors -> text`, right click on it and
+select Edit Token and set the Color value to `#FFFFFF`.
+
+[SCREENSHOT - Right click on color]
+
+[SCREENSHOT - Editor]
+
+This will look better.
+
+-- ds.h1: Let's convert json to FTD
+
+Click on export in Figma Studio.
+
+[SCREENSHOT]
+
+Copy the json shown in the preview section.
+
+[SCREENSHOT]
+
+And paste this json in the text-box below.
+
+-- j.json-exporter:
+
+-- ds.markdown:
+
+You will see the generated FTD code. Copy the FTD cod
+
+-- ds.h1: Go to the github repo of `forest-cs`
+
+Click on the Use this template button
+
+-- ds.h1: Modify the FASTN.ftd
+
+Change the package name and download base url
+
+-- ds.h1: Activate github pages
+
+-- ds.h1: Modify colors.ftd
+
+Go to this file https://github.com/FifthTry/dark-flame-cs/edit/main/colors.ftd
+and click on the edit button and paste your copied FTD code.
+Commit directly to the main branch and press on Commit changes button.
+
+Wait for the github action to get completed.
+
+Congratulations you
+
+-- ds.h1: Preview your color-scheme in action
+
+Go to (<github-username>.github.io/<repo>/)
+
+[SCREENSHOT]
 
 
---- ds.image: doc-site
-src: $assets.files.doc-site-example.png
-width: fill
-
-
---- ds.h1: 🚀 Project Structure
-
-Inside of your FASTN project, you'll see the following folders and files:
-
-
---- ds.code:
-lang:
-
-/
-├── .build/
-│   └── index.html
-├── .packages/
-│   └── fifthtry.github.io/
-│   	└── All downloaded dependencies
-│   	
-├── FASTN.ftd
-├── index.ftd
-└── README.md
-
-
-
---- ds.h1: 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
---- ds.code:
-lang:
-
-=======================================================================
-| Command                | Action                                     |
-| :--------------------- | :----------------------------------------- |
-| fastn build              | FASTN builder installs all `FASTN` dependencies|
-| fastn serve              | Starts local dev server at available port  |
-|                        | `localhost:8000`                           |
-=======================================================================
-
-
---- ds.h1: 👀 Want to learn more?
-
-Feel free to check [our documentation](https://fastn.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
+-- end: ds.page
