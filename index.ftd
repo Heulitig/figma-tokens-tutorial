@@ -110,14 +110,38 @@ height.fixed.px: 300
 
 -- ds.markdown:
 
-Check the `forest-cs-light` checkbox
+After opening `forest-cs.json`, check the `forest-cs-light` checkbox
+as shown below for making the light color scheme as the current
+active color scheme.
+
+-- ftd.image:
+src: $assets.files.static.select-forest-cs-light.png
+height.fixed.px: 300
 
 -- ds.h1: Create a new rectangle
 
-Create a new rectangle and change its color to
-`Background Colors -> base`
+To do this first select rectangle shape from top menu.
 
-[SCREENSHOT]
+-- ftd.image:
+src: $assets.files.static.select-rectangle-shape.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+After selecting it, drag and create your rectangle.
+
+-- ftd.image:
+src: $assets.files.static.create-rectangle.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Now select this rectangle
+and change its color to `Background Colors -> base` as shown below
+
+-- ftd.image:
+src: $assets.files.static.select-rectangle-color.png
+height.fixed.px: 300
 
 -- ds.h1: Create a new text-block
 
