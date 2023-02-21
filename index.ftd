@@ -2,6 +2,7 @@
 -- import: fifthtry.github.io/forest-cs as forest-cs
 -- import: fifthtry.github.io/saturated-sunset-cs as sunset-cs
 -- import: heulitig.github.io/figma-tokens-tutorial/json-to-ftd as j
+-- import: heulitig.github.io/figma-tokens-tutorial/assets as assets
 
 -- string forest-figma:
 $processor$: pr.figma-cs-token
@@ -14,23 +15,39 @@ $processor$: pr.figma-cs-token
 variable: $sunset-cs.main
 name: sunset-cs
 
--- ds.page: How to use figma token with fastn color schemes
+-- ds.page: How to use Figma Tokens with fastn color schemes
 
 -- ds.h1: Install figma token
 
-https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma-(Figma-Tokens)
+Visit this [link](https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma-(Figma-Tokens))
+and install the `Token Studio for figma` (Figma Tokens) plugin
 
 -- ds.h1: Create a new figma document
 
-[SCREENSHOT]
+From your figma account, create a new design file by clicking
+on the `New design file` button as shown below.
 
--- ds.h1: Open figma tokens plugin
+-- ftd.image:
+src: $assets.files.static.create-new-design-file.png
+height.fixed.px: 300
 
-Use quick actions from menu to open figma token plugin
+-- ds.h1: Open Figma Tokens plugin
 
-[SCREENSHOT]
+Select quick actions from menu to open `Token Studio for figma`
+(Figma Tokens) plugin as shown below.
 
-[SCREENSHOT 2]
+-- ftd.image:
+src: $assets.files.static.quick-actions.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+After clicking on quick actions, search for `Token Studio for figma`
+and launch that plugin by clicking on it.
+
+-- ftd.image:
+src: $assets.files.static.select-token-studio.png
+height.fixed.px: 300
 
 -- ds.h1: Create a new empty file inside figma plugin
 
