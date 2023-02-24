@@ -19,8 +19,9 @@ name: sunset-cs
 
 -- ds.h1: Install figma token
 
-Visit this [link](https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma-(Figma-Tokens))
-and install the `Token Studio for figma` (Figma Tokens) plugin
+If you already have this
+[`Token Studio for figma` (Figma Tokens)](https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma-(Figma-Tokens))
+plugin installed, then awesome. If not, then visit the above link.
 
 -- ds.h1: Create a new figma document
 
@@ -29,7 +30,8 @@ on the `New design file` button as shown below.
 
 -- ftd.image:
 src: $assets.files.static.create-new-design-file.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Open Figma Tokens plugin
 
@@ -38,7 +40,8 @@ Select quick actions from menu to open `Token Studio for figma`
 
 -- ftd.image:
 src: $assets.files.static.quick-actions.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -47,7 +50,8 @@ and launch that plugin by clicking on it.
 
 -- ftd.image:
 src: $assets.files.static.select-token-studio.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Create a new empty file inside figma plugin
 
@@ -56,7 +60,8 @@ by clicking on its button as shown below
 
 -- ftd.image:
 src: $assets.files.static.select-new-empty-file.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Save the forest theme json
 
@@ -64,6 +69,7 @@ Click on the below copy button inside forest-cs code-block
 
 -- ds.code: forest-cs
 lang: json
+max-height: 300
 
 $forest-figma
 
@@ -81,7 +87,8 @@ Step 1: Click on the Load button
 
 -- ftd.image:
 src: $assets.files.static.select-load-button.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -89,7 +96,8 @@ Step 2: Go under File Tab
 
 -- ftd.image:
 src: $assets.files.static.select-file.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -97,7 +105,8 @@ Step 3: Click on Choose File button
 
 -- ftd.image:
 src: $assets.files.static.select-choose-file.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -106,7 +115,8 @@ and click on open button.
 
 -- ftd.image:
 src: $assets.files.static.select-forest-cs.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -116,7 +126,8 @@ active color scheme.
 
 -- ftd.image:
 src: $assets.files.static.select-forest-cs-light.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Create a new rectangle
 
@@ -124,7 +135,8 @@ To do this first select rectangle shape from top menu.
 
 -- ftd.image:
 src: $assets.files.static.select-rectangle-shape.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -132,7 +144,8 @@ After selecting it, drag the cursor and create your rectangle.
 
 -- ftd.image:
 src: $assets.files.static.create-rectangle.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -141,7 +154,8 @@ and change its color to `Background Colors -> base` as shown below
 
 -- ftd.image:
 src: $assets.files.static.select-rectangle-color.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Create a new text-block
 
@@ -149,7 +163,8 @@ First, select the Text option from the top menu.
 
 -- ftd.image:
 src: $assets.files.static.select-text-option.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -159,7 +174,8 @@ let's say `Hello There`
 
 -- ftd.image:
 src: $assets.files.static.hello-text-block.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -169,7 +185,8 @@ So now, select the text-block and change its color to
 
 -- ftd.image:
 src: $assets.files.static.select-text-block-color.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Test your design in dark mode
 
@@ -177,7 +194,8 @@ Toggle the `forest-cs-dark` checkbox to change the design with dark color scheme
 
 -- ftd.image:
 src: $assets.files.static.forest-toggle-cs.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Lets try another color scheme
 
@@ -186,6 +204,7 @@ named `sunset-cs.json`.
 
 -- ds.code: Sunset-cs
 lang: json
+max-height: 300
 
 $sunset-figma
 
@@ -199,7 +218,8 @@ Click on `Choose File` -> Open `sunset.cs.json`
 
 -- ftd.image:
 src: $assets.files.static.open-sunset-cs.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -207,7 +227,8 @@ After loading `sunset-cs.json`, check the `sunset-cs-light` checkbox as shown be
 
 -- ftd.image:
 src: $assets.files.static.select-sunset-cs-light.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -215,7 +236,8 @@ To see the design in dark color scheme, toggle `sunset-cs-dark` checkbox.
 
 -- ftd.image:
 src: $assets.files.static.sunset-toggle-cs.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 

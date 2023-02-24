@@ -29,7 +29,7 @@ Let's say we want to modify forest-cs colors and create our own dark-forest-cs
 
 If you already have this
 [`Token Studio for figma` (Figma Tokens)](https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma-(Figma-Tokens))
-plugin installed, then awesome. If not don't have it installed, then visit the above link.
+plugin installed, then awesome. If not, then visit the above link.
 
 -- ds.h1: Open your Figma file
 
@@ -37,7 +37,8 @@ You can use any of your existing figma file or create a new one as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.0.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -52,7 +53,7 @@ and save it.
 
 -- ds.code: forest-cs
 lang: json
-max-height: 300
+max-height: 350
 
 $forest-figma
 
@@ -63,7 +64,8 @@ head to `Tools` -> `Load from File/Folder or Preset` as shown below
 
 -- ftd.image:
 src: $assets.files.static.b2.1.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -71,7 +73,8 @@ Then under `File` tab, click on `Choose File` option
 
 -- ftd.image:
 src: $assets.files.static.b2.2.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -80,7 +83,8 @@ which you saved as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.3.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -89,7 +93,8 @@ light color-scheme in your page.
 
 -- ftd.image:
 src: $assets.files.static.b2.4.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Check your component colors
 
@@ -98,7 +103,8 @@ inside your figma plugin once you select the rectangle as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.6.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -106,7 +112,8 @@ And text is using this color: `Standalone Colors -> text`
 
 -- ftd.image:
 src: $assets.files.static.b2.7.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Let's modify some colors
 
@@ -123,7 +130,8 @@ as shown below
 
 -- ftd.image:
 src: $assets.files.static.b2.5.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -134,7 +142,8 @@ as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.8.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -143,7 +152,8 @@ on its color circle i.e Standalone Colors -> text as shown below
 
 -- ftd.image:
 src: $assets.files.static.b2.9.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -152,7 +162,8 @@ to #0b5394 (for blue color) then hit Save button
 
 -- ftd.image:
 src: $assets.files.static.b2.10.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -160,7 +171,8 @@ This looks much better now :)
 
 -- ftd.image:
 src: $assets.files.static.b2.11.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -176,7 +188,8 @@ in your Figma Tokens plugin as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.12.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -184,7 +197,8 @@ After doing that, copy the json from the preview section as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.13.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -213,7 +227,8 @@ as shown below
 
 -- ftd.image:
 src: $assets.files.static.b2.22.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -222,7 +237,8 @@ from template` button.
 
 -- ftd.image:
 src: $assets.files.static.b2.23.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -231,7 +247,8 @@ created using this template like this:
 
 -- ftd.image:
 src: $assets.files.static.b2.24.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -244,7 +261,8 @@ based on your repo name and username as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.25.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -253,7 +271,8 @@ and make your changes
 
 -- ftd.image:
 src: $assets.files.static.b2.26.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -261,7 +280,8 @@ Like this
 
 -- ftd.image:
 src: $assets.files.static.b2.27.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -270,7 +290,8 @@ by committing directly on the main branch as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.28.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Modify index.ftd
 
@@ -279,7 +300,8 @@ based on your username and repository name as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.29.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -287,7 +309,8 @@ Like this
 
 -- ftd.image:
 src: $assets.files.static.b2.30.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Modify colors.ftd
 
@@ -295,7 +318,8 @@ Go to your colors.ftd file in your repo and click on the edit button
 
 -- ftd.image:
 src: $assets.files.static.b2.35.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -306,7 +330,8 @@ press on Commit changes button as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.30.png
-height.fixed.px: 306
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Activate github pages
 
@@ -314,7 +339,8 @@ Now to activate github pages (gh-pages) go to Settings as shown below
 
 -- ftd.image:
 src: $assets.files.static.b2.31.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -322,7 +348,8 @@ Go to Pages tab
 
 -- ftd.image:
 src: $assets.files.static.b2.32.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
@@ -332,7 +359,8 @@ as shown below.
 
 -- ftd.image:
 src: $assets.files.static.b2.33.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.h1: Preview your color-scheme in action
 
@@ -344,7 +372,8 @@ In my case, my color-scheme will be deployed at
 
 -- ftd.image:
 src: $assets.files.static.b2.final.png
-height.fixed.px: 300
+height.fixed.px: 350
+width: fill-container
 
 -- ds.markdown:
 
