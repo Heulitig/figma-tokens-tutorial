@@ -1,8 +1,7 @@
--- import: fastn/processors as pr
--- import: fifthtry.github.io/forest-cs as forest-cs
--- import: fifthtry.github.io/saturated-sunset-cs as sunset-cs
 -- import: heulitig.github.io/figma-tokens-tutorial/json-to-ftd as j
+-- import: fifthtry.github.io/forest-cs as forest-cs
 -- import: heulitig.github.io/figma-tokens-tutorial/assets as assets
+-- import: fastn/processors as pr
 
 -- string forest-figma:
 $processor$: pr.figma-cs-token
@@ -10,279 +9,327 @@ variable: $forest-cs.main
 name: forest-cs
 
 
--- string sunset-figma:
-$processor$: pr.figma-cs-token
-variable: $sunset-cs.main
-name: sunset-cs
+-- ds.page: How to create your own `Fastn Color Scheme` from Figma json
 
--- ds.page: How to use Figma Tokens with fastn color schemes
+It happens quite often that we get a hold of some nice color-scheme
+package which we believe would look good on our pages
+but we don't want to use the same color-scheme as it is. Sometimes, we
+want to do some tweaks on top of that already good looking color-scheme and create
+our own super awesome color-scheme specific for our websites.
 
--- ds.h1: Install figma token
+In `ftd`, you can create your own color-scheme package from
+the exported fastn color-scheme json generated from figma.
+If you have come here, you might be already familiar
+with using fastn color-scheme json in Figma using `Token Studio for Figma` plugin.
+If not, then [visit this guide](https://fastn.io/figma).
 
-Visit this [link](https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma-(Figma-Tokens))
-and install the `Token Studio for figma` (Figma Tokens) plugin
+Let's say we want to modify forest-cs colors and create our own dark-forest-cs
 
--- ds.h1: Create a new figma document
+-- ds.h1: Install figma tokens plugin
 
-From your figma account, create a new design file by clicking
-on the `New design file` button as shown below.
+If you already have this
+[`Token Studio for figma` (Figma Tokens)](https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma-(Figma-Tokens))
+plugin installed, then awesome. If not don't have it installed, then visit the above link.
+
+-- ds.h1: Open your Figma file
+
+You can use any of your existing figma file or create a new one as shown below.
 
 -- ftd.image:
-src: $assets.files.static.create-new-design-file.png
-height.fixed.px: 300
-
--- ds.h1: Open Figma Tokens plugin
-
-Select quick actions from menu to open `Token Studio for figma`
-(Figma Tokens) plugin as shown below.
-
--- ftd.image:
-src: $assets.files.static.quick-actions.png
+src: $assets.files.static.b2.0.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-After clicking on quick actions, search for `Token Studio for figma`
-and launch that plugin by clicking on it.
+In this tutorial, I will be using the same figma file which I used in this
+[tutorial guide](https://fastn.io/figma)
 
--- ftd.image:
-src: $assets.files.static.select-token-studio.png
-height.fixed.px: 300
+-- ds.h1: Create forest-cs.json file
 
--- ds.h1: Create a new empty file inside figma plugin
-
-Once you have launched the plugin, create a new empty file
-by clicking on its button as shown below
-
--- ftd.image:
-src: $assets.files.static.select-new-empty-file.png
-height.fixed.px: 300
-
--- ds.h1: Save the forest theme json
-
-Click on the below copy button inside forest-cs code-block
+Copy the below json and create a new file named "forest-cs.json"
+using any of your favourite text editor (for eg. Sublime Text)
+and save it.
 
 -- ds.code: forest-cs
 lang: json
+max-height: 300
 
 $forest-figma
 
--- ds.markdown:
+-- ds.h1: Load forest-cs.json in figma plugin
 
-Create a new json file named `forest-cs.json` using your favourite
-text editor (for eg. Sublime Text) and paste the content you just copied
-and save it.
-
--- ds.h1: Load `forest-cs.json` inside figma plugin
-
-To load `forest-cs.json` which we just created,
-
-Step 1: Click on the Load button
+Once you have launched your figma tokens plugin,
+head to `Tools` -> `Load from File/Folder or Preset` as shown below
 
 -- ftd.image:
-src: $assets.files.static.select-load-button.png
+src: $assets.files.static.b2.1.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-Step 2: Go under File Tab
+Then under `File` tab, click on `Choose File` option
 
 -- ftd.image:
-src: $assets.files.static.select-file.png
+src: $assets.files.static.b2.2.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-Step 3: Click on Choose File button
+It will show a File picker, open your `forest-cs.json` file
+which you saved as shown below.
 
 -- ftd.image:
-src: $assets.files.static.select-choose-file.png
+src: $assets.files.static.b2.3.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-Step 4: Find and select `forest-cs.json` from the file picker
-and click on open button.
+Then tick the `forest-cs-light` checkbox to set the
+light color-scheme in your page.
 
 -- ftd.image:
-src: $assets.files.static.select-forest-cs.png
+src: $assets.files.static.b2.4.png
+height.fixed.px: 300
+
+-- ds.h1: Check your component colors
+
+You will notice that the rectangle is using this color: `Background Colors -> base`
+inside your figma plugin once you select the rectangle as shown below.
+
+-- ftd.image:
+src: $assets.files.static.b2.6.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-After opening `forest-cs.json`, check the `forest-cs-light` checkbox
-as shown below for making the light color scheme as the current
-active color scheme.
+And text is using this color: `Standalone Colors -> text`
 
 -- ftd.image:
-src: $assets.files.static.select-forest-cs-light.png
+src: $assets.files.static.b2.7.png
 height.fixed.px: 300
 
--- ds.h1: Create a new rectangle
+-- ds.h1: Let's modify some colors
 
-To do this first select rectangle shape from top menu.
+Guess what we don't like any of these two colors at all
+in this light color scheme.
 
--- ftd.image:
-src: $assets.files.static.select-rectangle-shape.png
-height.fixed.px: 300
+Let's say we want the `Background Colors -> base`
+to be some light green color (for eg. #90EE90)
+instead of the boring white :(
 
--- ds.markdown:
-
-After selecting it, drag the cursor and create your rectangle.
-
--- ftd.image:
-src: $assets.files.static.create-rectangle.png
-height.fixed.px: 300
-
--- ds.markdown:
-
-Now select this rectangle
-and change its color to `Background Colors -> base` as shown below
+To do this, right click on the current active color circle i.e
+`Background Colors -> base` and click on Edit token option
+as shown below
 
 -- ftd.image:
-src: $assets.files.static.select-rectangle-color.png
-height.fixed.px: 300
-
--- ds.h1: Create a new text-block
-
-First, select the Text option from the top menu.
-
--- ftd.image:
-src: $assets.files.static.select-text-option.png
+src: $assets.files.static.b2.5.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-After selecting it, drag the cursor inside the rectangle
-and create a text-block. Add some text to it,
-let's say `Hello There`
+You will see this window once you hit Edit token option.
+On this window, edit the Color value to
+this #90EE90 (for light green color) then hit Save button
+as shown below.
 
 -- ftd.image:
-src: $assets.files.static.hello-text-block.png
+src: $assets.files.static.b2.8.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-As you might see, the text is barely visible inside the rectangle.
-So now, select the text-block and change its color to
-`Standalone Colors -> text` as shown below.
+Similarly, select the text-block and edit its color by right-clicking
+on its color circle i.e Standalone Colors -> text as shown below
 
 -- ftd.image:
-src: $assets.files.static.select-text-block-color.png
-height.fixed.px: 300
-
--- ds.h1: Test your design in dark mode
-
-Toggle the `forest-cs-dark` checkbox to change the design with dark color scheme
-
--- ftd.image:
-src: $assets.files.static.forest-toggle-cs.png
-height.fixed.px: 300
-
--- ds.h1: Lets try another color scheme
-
-Let's use `sunset-cs` now. Save the following json to a new json file
-named `sunset-cs.json`.
-
--- ds.code: Sunset-cs
-lang: json
-
-$sunset-figma
-
--- ds.h1: Load `sunset-cs.json` in figma
-
-Just like we loaded `forest-cs.json`, similarly load `sunset-cs.json`
-into the figma plugin.
-
-Click on `Load` -> Select `File` Tab ->
-Click on `Choose File` -> Open `sunset.cs.json`
-
--- ftd.image:
-src: $assets.files.static.open-sunset-cs.png
+src: $assets.files.static.b2.9.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-After loading `sunset-cs.json`, check the `sunset-cs-light` checkbox as shown below
+Now change this color by changing its Color value
+to #0b5394 (for blue color) then hit Save button
 
 -- ftd.image:
-src: $assets.files.static.select-sunset-cs-light.png
+src: $assets.files.static.b2.10.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-To see the design in dark color scheme, toggle `sunset-cs-dark` checkbox.
+This looks much better now :)
 
 -- ftd.image:
-src: $assets.files.static.sunset-toggle-cs.png
+src: $assets.files.static.b2.11.png
 height.fixed.px: 300
 
 -- ds.markdown:
 
-Congratulations you have successfully completed this tutorial.
+After doing such color modifications, you might
+want to save your color-scheme as a fastn color-scheme package.
+For this, we can convert this json generated from this color-scheme
+to FTD code which we can use in our fastn color-scheme package.
 
-;; Upcoming to create your own fastn color scheme repo using figma json
-/-- ds.h1: Let's fix forest-cs
+-- ds.h1: Let's convert json to FTD
 
-Let's load the forest-cs.json once again, you will notice it looks unreadable
-in light mode.
+To export your color-scheme as json, click on Export to File/Folder under Tools
+in your Figma Tokens plugin as shown below.
 
-[SCREENSHOT]
+-- ftd.image:
+src: $assets.files.static.b2.12.png
+height.fixed.px: 300
 
-/-- ds.h1: Let's change the token value
+-- ds.markdown:
 
-Locate the `Standalone Colors -> text`, right click on it and
-select Edit Token and set the Color value to `#FFFFFF`.
+After doing that, copy the json from the preview section as shown below.
 
-[SCREENSHOT - Right click on color]
+-- ftd.image:
+src: $assets.files.static.b2.13.png
+height.fixed.px: 300
 
-[SCREENSHOT - Editor]
-
-This will look better.
-
-/-- ds.h1: Let's convert json to FTD
-
-Click on export in Figma Studio.
-
-[SCREENSHOT]
-
-Copy the json shown in the preview section.
-
-[SCREENSHOT]
+-- ds.markdown:
 
 And paste this json in the text-box below.
 
-/-- j.json-exporter:
+-- j.json-exporter:
 
-/-- ds.markdown:
+-- ds.markdown:
 
-You will see the generated FTD code. Copy the FTD cod
+You will see the generated FTD code. Copy this FTD code by clicking
+on the copy icon at the top of the code-block above.
 
-/-- ds.h1: Go to the github repo of `forest-cs`
+-- ds.h1: Go to the github repo of `sailing-shark-cs`
 
-Click on the Use this template button
+This repo is a template repo for fastn color-schemes, we will create
+our own color-scheme repo using this.
 
-/-- ds.h1: Modify the FASTN.ftd
+To do that, click on the `Use this template` button then `Create a new repository`
+as shown below
 
-Change the package name and download base url
+-- ftd.image:
+src: $assets.files.static.b2.22.png
+height.fixed.px: 300
 
-/-- ds.h1: Activate github pages
+-- ds.markdown:
 
-/-- ds.h1: Modify colors.ftd
+Fill your repository details as shown below, then click on `Create repository
+from template` button.
 
-Go to this file https://github.com/FifthTry/dark-flame-cs/edit/main/colors.ftd
+-- ftd.image:
+src: $assets.files.static.b2.23.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Wait for a while, after that you will see your color-scheme repository
+created using this template like this:
+
+-- ftd.image:
+src: $assets.files.static.b2.24.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+But before you can use this repo, you need to do setup some things
+
+-- ds.h1: Modify the FASTN.ftd
+
+Change the fastn.package and download-base-url
+based on your repo name and username as shown below.
+
+-- ftd.image:
+src: $assets.files.static.b2.25.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+To edit this file, hit the edit icon as shown below
+and make your changes
+
+-- ftd.image:
+src: $assets.files.static.b2.26.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Like this
+
+-- ftd.image:
+src: $assets.files.static.b2.27.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+When you are done updating the contents, scroll down and save changes
+by committing directly on the main branch as shown below.
+
+-- ftd.image:
+src: $assets.files.static.b2.28.png
+height.fixed.px: 300
+
+-- ds.h1: Modify index.ftd
+
+Just like we updated FASTN.ftd, update the import for the colors
+based on your username and repository name as shown below.
+
+-- ftd.image:
+src: $assets.files.static.b2.29.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Like this
+
+-- ftd.image:
+src: $assets.files.static.b2.30.png
+height.fixed.px: 300
+
+-- ds.h1: Modify colors.ftd
+
+Go to your colors.ftd file in your repo
 and click on the edit button and paste your copied FTD code.
 Commit directly to the main branch and press on Commit changes button.
 
 Wait for the github action to get completed.
 
-Congratulations you
+-- ds.h1: Activate github pages
 
-/-- ds.h1: Preview your color-scheme in action
+Now to activate github pages (gh-pages) go to Settings as shown below
 
-Go to (<github-username>.github.io/<repo>/)
+-- ftd.image:
+src: $assets.files.static.b2.31.png
+height.fixed.px: 300
 
-[SCREENSHOT]
+-- ds.markdown:
 
+Go to Pages tab
+
+-- ftd.image:
+src: $assets.files.static.b2.32.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Then select the Source to `Deploy from the branch`
+and select the branch to `gh-pages` as shown below
+
+-- ftd.image:
+src: $assets.files.static.b2.33.png
+height.fixed.px: 300
+
+-- ds.h1: Preview your color-scheme in action
+
+Go to your (`\<github-username\>.github.io/\<repo\>/`) page to see your
+color-scheme in action.
+
+In my case, my color-scheme will be deployed at
+`heulitig.github.io/my-color-scheme` as shown below
+
+-- ftd.image:
+src: $assets.files.static.b2.final.png
+height.fixed.px: 300
+
+-- ds.markdown:
+
+Congratulations you have completed this tutorial.
 
 -- end: ds.page
